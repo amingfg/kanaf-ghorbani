@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- زبان فارسی و جهت راست‌به‌چپ -->
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <!-- این خط باعث می‌شه سایت توی موبایل درست نمایش داده بشه -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نورکده | کناف و نورپردازی</title>
+  <meta name="description" content="اجرای سقف و دیوار کناف، طراحی و فروش انواع چراغ و نورپردازی داخلی و نمای ساختمان">
+
+  <!-- فونت وزیرمتن (فونت فارسی رایگان) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- اعمال حالت روز/شب قبل از نمایش صفحه -->
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <!-- ============ هدر و منو ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#home" class="logo">
+        <span class="logo__icon">✦</span>
+        نورکده
+      </a>
+
+      <!-- دکمه تغییر حالت روز و شب (کارش توی theme.js هست) -->
+      <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت روز و شب">☀</button>
+
+      <!-- دکمه منوی موبایل (همبرگری) -->
+      <button class="menu-toggle" id="menuToggle" aria-label="باز و بسته کردن منو">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <a href="#home">خانه</a>
+        <a href="#services">خدمات</a>
+        <a href="#products">محصولات</a>
+        <a href="#projects">نمونه کار</a>
+        <a href="#calculator">محاسبه قیمت</a>
+        <a href="#about">درباره ما</a>
+        <a href="#contact" class="btn btn--small">تماس بگیرید</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ بخش اصلی (هیرو) ============ -->
+    <section class="hero" id="home">
+      <!-- نور دنبال‌کننده‌ی ماوس (با CSS و JS؛ فقط روی دسکتاپ) -->
+      <div class="hero__spot" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="badge">کناف • نورپردازی • دکوراسیون</span>
+          <h1>سقف و دیوارتان را <em>با نور</em> زنده کنید</h1>
+          <p>
+            اجرای حرفه‌ای کناف، سقف کاذب و دیوار پوش، همراه با طراحی و فروش
+            انواع چراغ‌های LED، ریسه و لوستر. از طراحی تا اجرا، همه‌چیز در یک مجموعه.
+          </p>
+          <div class="hero__actions">
+            <a href="#contact" class="btn">مشاوره رایگان</a>
+            <a href="#projects" class="btn btn--ghost">دیدن نمونه کارها</a>
+          </div>
+        </div>
+
+        <!-- تصویر تزئینی: یک سقف با نورپردازی (با CSS ساخته شده، بعداً می‌تونی عکس واقعی بذاری) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="room">
+            <div class="room__ceiling"></div>
+            <div class="room__light room__light--1"></div>
+            <div class="room__light room__light--2"></div>
+            <div class="room__light room__light--3"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ آمار ============ -->
+    <section class="stats">
+      <div class="container stats__grid">
+        <div class="stat"><strong data-count="12">0</strong><span>سال تجربه</span></div>
+        <div class="stat"><strong data-count="450">0</strong><span>پروژه انجام‌شده</span></div>
+        <div class="stat"><strong data-count="300">0</strong><span>مشتری راضی</span></div>
+        <div class="stat"><strong data-count="80">0</strong><span>مدل چراغ و لوستر</span></div>
+      </div>
+    </section>
+
+    <!-- ============ خدمات ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <h2>خدمات ما</h2>
+          <p>هر چیزی که برای یک سقف و دیوار زیبا و روشن لازم دارید</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__icon">▤</div>
+            <h3>سقف کاذب کناف</h3>
+            <p>اجرای سقف کاذب تخت، طرح‌دار و کلاسیک با ورق‌های استاندارد و زیرسازی مقاوم.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">▥</div>
+            <h3>دیوار و پارتیشن کناف</h3>
+            <p>جداسازی فضا با پارتیشن‌های عایق صدا و حرارت، سریع و بدون نیاز به ساخت‌وساز سنگین.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">◐</div>
+            <h3>نورپردازی مخفی</h3>
+            <p>اجرای نورمخفی، ریسه و LED خطی داخل سقف و دیوار برای حس و حال دلنشین.</p>
+          </article>
+          <article class="card">
+            <div class="card__icon">✧</div>
+            <h3>مشاوره و طراحی</h3>
+            <p>بازدید رایگان، پیشنهاد طرح و برآورد هزینه قبل از شروع کار.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ محصولات ============ -->
+    <section class="section section--alt" id="products">
+      <div class="container">
+        <div class="section__head">
+          <h2>محصولات نورپردازی</h2>
+          <p>چراغ مناسب هر فضا، از خانه تا مغازه و دفتر کار</p>
+        </div>
+
+        <!-- دکمه‌های فیلتر (با جاوااسکریپت کار می‌کنند) -->
+        <div class="filters" id="filters">
+          <button class="filter is-active" data-filter="all">همه</button>
+          <button class="filter" data-filter="spot">هالوژن و spot</button>
+          <button class="filter" data-filter="chandelier">لوستر</button>
+          <button class="filter" data-filter="strip">ریسه و LED</button>
+        </div>
+
+        <div class="products" id="products-grid">
+          <article class="product" data-category="spot">
+            <div class="product__img product__img--1"></div>
+            <h3>چراغ سقفی توکار</h3>
+            <p>۹ وات، نور آفتابی و مهتابی</p>
+            <span class="price">از ۱۸۰,۰۰۰ تومان</span>
+            <a href="product.html?id=1" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+          <article class="product" data-category="chandelier">
+            <div class="product__img product__img--2"></div>
+            <h3>لوستر مدرن مدل آوین</h3>
+            <p>۶ شاخه، قابل تنظیم نور</p>
+            <span class="price">از ۴,۸۰۰,۰۰۰ تومان</span>
+            <a href="product.html?id=2" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+          <article class="product" data-category="strip">
+            <div class="product__img product__img--3"></div>
+            <h3>ریسه LED رول ۵ متری</h3>
+            <p>ضدآب، رنگی و تک‌رنگ</p>
+            <span class="price">از ۳۵۰,۰۰۰ تومان</span>
+            <a href="product.html?id=3" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+          <article class="product" data-category="spot">
+            <div class="product__img product__img--4"></div>
+            <h3>چراغ ریلی</h3>
+            <p>مناسب مغازه و گالری</p>
+            <span class="price">از ۶۵۰,۰۰۰ تومان</span>
+            <a href="product.html?id=4" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+          <article class="product" data-category="chandelier">
+            <div class="product__img product__img--5"></div>
+            <h3>لوستر کریستالی</h3>
+            <p>کلاسیک، مناسب پذیرایی</p>
+            <span class="price">از ۱۲,۰۰۰,۰۰۰ تومان</span>
+            <a href="product.html?id=5" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+          <article class="product" data-category="strip">
+            <div class="product__img product__img--6"></div>
+            <h3>LED پنلی سقفی</h3>
+            <p>۴۰ وات، نور یکنواخت</p>
+            <span class="price">از ۹۵۰,۰۰۰ تومان</span>
+            <a href="product.html?id=6" class="product__more">مشاهده جزئیات ←</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ نمونه کارها ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head">
+          <h2>نمونه کارها</h2>
+          <p>چند پروژه از کارهای انجام‌شده (بعداً عکس واقعی جایگزین کن)</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--tall g1"><figcaption>سقف نورمخفی - پذیرایی</figcaption></figure>
+          <figure class="gallery__item g2"><figcaption>پارتیشن کناف - دفتر کار</figcaption></figure>
+          <figure class="gallery__item g3"><figcaption>سقف طرح‌دار - اتاق خواب</figcaption></figure>
+          <figure class="gallery__item gallery__item--wide g4"><figcaption>نورپردازی مغازه</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ قبل و بعد از اجرا ============ -->
+    <section class="section section--alt" id="beforeafter">
+      <div class="container">
+        <div class="section__head">
+          <h2>قبل و بعد از اجرا</h2>
+          <p>نوار وسط تصویر رو بکشید و تفاوت رو ببینید (بعداً عکس‌های واقعی رو جایگزین کن)</p>
+        </div>
+
+        <!-- دو لایه روی هم‌اند: «بعد» پایینه و «قبل» روش قرار می‌گیره و با اسلایدر بریده می‌شه -->
+        <div class="ba" id="ba">
+          <div class="ba__layer ba__after"><span class="ba__tag">بعد از اجرا</span></div>
+          <div class="ba__layer ba__before"><span class="ba__tag">قبل از اجرا</span></div>
+          <div class="ba__handle" aria-hidden="true"></div>
+          <input class="ba__range" id="baRange" type="range" min="0" max="100" value="50" dir="ltr" aria-label="مقایسه قبل و بعد">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ محاسبه قیمت ============ -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section__head">
+          <h2>محاسبه تقریبی قیمت</h2>
+          <p>متراژ رو وارد کنید تا یک برآورد سریع بگیرید</p>
+        </div>
+
+        <form class="calc" id="calcForm">
+          <div class="calc__fields">
+            <label>نوع کار
+              <select id="calcType">
+                <option value="flat">سقف کاذب تخت</option>
+                <option value="design">سقف طرح‌دار</option>
+                <option value="wall">دیوار و پارتیشن</option>
+              </select>
+            </label>
+            <label>متراژ (متر مربع)
+              <input type="number" id="calcArea" min="1" max="2000" value="20" inputmode="numeric">
+            </label>
+            <label>تعداد چراغ توکار
+              <input type="number" id="calcSpots" min="0" max="500" value="0" inputmode="numeric">
+            </label>
+            <label class="calc__check">
+              <input type="checkbox" id="calcHidden">
+              <span>نورمخفی (LED داخل سقف)</span>
+            </label>
+          </div>
+
+          <div class="calc__result">
+            <span>برآورد هزینه</span>
+            <strong class="calc__price" id="calcResult">—</strong>
+            <p class="calc__note">این عدد فقط یک تخمین اولیه است. قیمت دقیق بعد از بازدید و بررسی اعلام می‌شود.</p>
+            <a href="#contact" class="btn">ثبت درخواست دقیق</a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ============ شبیه‌ساز دمای رنگ نور ============ -->
+    <section class="section section--alt" id="simulator">
+      <div class="container sim">
+        <div class="sim__room" id="simRoom" aria-hidden="true">
+          <div class="sim__glow"></div>
+          <div class="sim__lamp"></div>
+          <div class="sim__sofa"></div>
+        </div>
+
+        <div class="sim__controls">
+          <h2>دمای رنگ نور چه فرقی می‌کند؟</h2>
+          <p>اسلایدر رو حرکت بدید و ببینید نور آفتابی و مهتابی چه حسی به اتاق می‌دهد.</p>
+
+          <input class="sim__range" id="simRange" type="range" min="2700" max="6500" step="100" value="3000" aria-label="دمای رنگ نور">
+          <div class="sim__scale" dir="ltr"><span>گرم (آفتابی)</span><span>سرد (مهتابی)</span></div>
+
+          <div class="sim__label">
+            <strong id="simKelvin">۳٬۰۰۰ کلوین</strong>
+            <span id="simName">آفتابی</span>
+          </div>
+          <p class="sim__hint" id="simHint"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ درباره ما ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__text">
+          <h2>درباره نورکده</h2>
+          <p>
+            ما یک مجموعه‌ی خانوادگی هستیم که بیش از ده سال است در زمینه‌ی اجرای کناف و
+            فروش چراغ و لوستر فعالیت می‌کنیم. هدف ما این است که هر فضا، با کمترین هزینه
+            و بالاترین کیفیت، به زیباترین شکل ممکن روشن شود.
+          </p>
+          <ul class="checklist">
+            <li>متریال استاندارد و اصل</li>
+            <li>اجرا توسط تیم مجرب</li>
+            <li>تحویل در زمان قول‌داده‌شده</li>
+            <li>گارانتی کار و پشتیبانی بعد از اجرا</li>
+          </ul>
+        </div>
+        <div class="about__box">
+          <strong>۱۰۰٪</strong>
+          <span>رضایت مشتریان</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ نظرات مشتریان ============ -->
+    <!-- توجه: این نظرها نمونه‌اند. قبل از انتشار حتماً با نظرات واقعی مشتری‌هات جایگزین کن -->
+    <section class="section section--alt" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <h2>نظر مشتریان</h2>
+          <p>تجربه‌ی کسانی که با ما کار کرده‌اند</p>
+        </div>
+
+        <div class="reviews">
+          <article class="review">
+            <div class="review__stars" aria-label="۵ ستاره">★★★★★</div>
+            <p>سقف نورمخفی پذیرایی رو اجرا کردن و نتیجه خیلی بهتر از چیزی بود که فکر می‌کردم. تمیز کار کردن و سر وقت تحویل دادن.</p>
+            <footer>آقای رضایی<span>سقف نورمخفی، پذیرایی</span></footer>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="۵ ستاره">★★★★★</div>
+            <p>برای مغازه‌ام چراغ ریلی و پارتیشن کناف گرفتم. مشاوره‌شون کمک کرد هزینه‌ام هم کمتر بشه.</p>
+            <footer>خانم کریمی<span>نورپردازی مغازه</span></footer>
+          </article>
+          <article class="review">
+            <div class="review__stars" aria-label="۵ ستاره">★★★★★</div>
+            <p>لوستر رو با نصب تحویل دادن و درباره‌ی نور هر اتاق راهنمایی‌های خوبی کردن. پیشنهاد می‌کنم.</p>
+            <footer>آقای محمدی<span>لوستر و نورپردازی منزل</span></footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ سوالات پرتکرار ============ -->
+    <!-- جواب‌ها کلی نوشته شده؛ با اطلاعات واقعی مغازه‌ات دقیق‌شون کن -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section__head">
+          <h2>سوالات پرتکرار</h2>
+          <p>جواب چند سوال رایج قبل از شروع کار</p>
+        </div>
+
+        <div class="faq">
+          <details>
+            <summary>سقف کناف چقدر دوام دارد؟</summary>
+            <p>اگر زیرسازی اصولی اجرا شود و سقف در معرض نشتی آب نباشد، سال‌ها بدون مشکل می‌ماند. کیفیت ورق و پروفیل و دقت اجرا مهم‌ترین عامل‌ها هستند.</p>
+          </details>
+          <details>
+            <summary>برای آشپزخانه و سرویس هم می‌شود کناف زد؟</summary>
+            <p>بله، با ورق‌های ضدرطوبت مخصوص این فضاها. نوع ورق را قبل از اجرا با شما هماهنگ می‌کنیم.</p>
+          </details>
+          <details>
+            <summary>اجرای کار چقدر طول می‌کشد؟</summary>
+            <p>بسته به متراژ و پیچیدگی طرح، از چند روز تا حدود یک هفته. زمان دقیق بعد از بازدید اعلام می‌شود.</p>
+          </details>
+          <details>
+            <summary>بازدید و برآورد هزینه رایگان است؟</summary>
+            <p>بله، بازدید و برآورد اولیه رایگان است. می‌توانید از ماشین‌حساب همین صفحه هم یک تخمین سریع بگیرید.</p>
+          </details>
+          <details>
+            <summary>چراغ‌ها گارانتی دارند؟</summary>
+            <p>بله، بسته به مدل از ۶ تا ۱۲ ماه گارانتی دارند. مدت گارانتی هر محصول در صفحه‌ی همان محصول نوشته شده است.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ تماس ============ -->
+    <section class="section section--alt" id="contact">
+      <div class="container contact">
+        <div class="contact__info">
+          <h2>تماس با ما</h2>
+          <p>برای مشاوره و برآورد هزینه پیام بدهید یا تماس بگیرید.</p>
+          <ul>
+            <li><b>آدرس:</b> شهر شما، خیابان نمونه، پلاک ۱۰</li>
+          <li class="map-item">
+            <!-- مختصات نقشه نمونه‌ست. توی openstreetmap.org مغازه رو پیدا کن، Share → HTML را بزن و آدرس iframe را عوض کن.
+                 مختصات دکمه‌ی مسیریابی (destination=عرض,طول) را هم همین‌طور عوض کن -->
+            <div class="map">
+              <iframe title="نقشه‌ی مغازه" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=51.37%2C35.68%2C51.41%2C35.71&amp;layer=mapnik&amp;marker=35.695%2C51.39"></iframe>
+            </div>
+            <a class="btn btn--small map__btn" href="https://www.google.com/maps/dir/?api=1&amp;destination=35.695,51.39" target="_blank" rel="noopener">مسیریابی تا مغازه</a>
+          </li>
+            <li><b>تلفن:</b> <a href="tel:+989120000000">۰۹۱۲ ۰۰۰ ۰۰۰۰</a></li>
+            <li><b>ساعت کاری:</b> شنبه تا پنجشنبه، ۹ تا ۲۰</li>
+          </ul>
+        </div>
+
+        <form class="form" id="contactForm">
+          <label>نام شما
+            <input type="text" name="name" required placeholder="مثلاً علی رضایی">
+          </label>
+          <label>شماره تماس
+            <input type="tel" name="phone" required placeholder="۰۹۱۲...">
+          </label>
+          <label>پیام
+            <textarea name="message" rows="4" placeholder="درباره‌ی پروژه‌تان بنویسید..."></textarea>
+          </label>
+          <button type="submit" class="btn">ارسال درخواست</button>
+          <p class="form__msg" id="formMsg"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ فوتر ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© ۱۴۰۵ نورکده، همه حقوق محفوظ است</span>
+      <a href="#home">بازگشت به بالا ↑</a>
+    </div>
+  </footer>
+
+  <!-- دکمه‌های ثابت تماس و واتساپ (شماره رو عوض کن) -->
+  <div class="float-contact">
+    <a class="float-btn float-btn--call" href="tel:+989120000000" aria-label="تماس تلفنی">📞 تماس</a>
+    <a class="float-btn float-btn--wa" href="https://wa.me/989120000000" target="_blank" rel="noopener" aria-label="پیام در واتساپ">💬 واتساپ</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

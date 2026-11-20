@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>محصول | نورکده</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="theme.js"></script>
+</head>
+<body>
+
+  <header class="header is-scrolled">
+    <div class="container header__inner">
+      <a href="index.html" class="logo">
+        <span class="logo__icon">✦</span>
+        نورکده
+      </a>
+      <a href="index.html#products" class="back-link">← بازگشت به محصولات</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="تغییر حالت روز و شب">☀</button>
+    </div>
+  </header>
+
+  <main class="pd">
+    <!-- محتوای محصول با product.js اینجا ساخته می‌شه -->
+    <div class="container" id="productBox"></div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© ۱۴۰۵ نورکده، همه حقوق محفوظ است</span>
+      <a href="index.html">صفحه اصلی</a>
+    </div>
+  </footer>
+
+  <script src="product.js"></script>
+</body>
+</html>
